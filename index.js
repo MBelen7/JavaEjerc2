@@ -49,11 +49,11 @@ const pizzas = [
 ];
 
 //Resoluciones:
-// a)  Las pizzas que tengan un id impar//
+//a)  Las pizzas que tengan un id impar//
 const pizzasImpares = pizzas.filter((pizza) => pizza.id % 2 !== 0);
 console.log("Pizzas con id impar:", pizzasImpares);
 
-//*b) ¿Hay alguna pizza que valga menos de $600?//*
+//b) ¿Hay alguna pizza que valga menos de $600?//
 const pizzaBarata = pizzas.find((pizza) => pizza.precio < 600);
 if (pizzaBarata) {
   console.log("La pizza que vale menos de $600 es:", pizzaBarata);
